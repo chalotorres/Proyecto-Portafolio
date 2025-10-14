@@ -1,5 +1,3 @@
-'use strict';
-
 const animarTexto = (texto) => {
     const numLetras = texto.dataset.texto.length;
 
@@ -30,14 +28,10 @@ const animarTexto = (texto) => {
             cursor.classList.add('hero__cursor--active');
         }
 
-    }, numLetras * 100);
+    }, numLetras * 100)
 
     // Se retorna una promesa para saber el tiempo finalizado de la animación.
     return new Promise((resolve, ) => setTimeout(resolve, numLetras * 100));
-};
+}
 
-window.addEventListener('load', async () => {
-    await animarTexto(document.querySelector('.hero__titulo--uno'));
-    await animarTexto(document.querySelector('.hero__titulo--dos'));
-});
-//# sourceMappingURL=bundle.js.map
+export default animarTexto;
