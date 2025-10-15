@@ -1,4 +1,5 @@
 import animarTexto from "./animarTexto";
+import "./animarGaleria";
 
 window.addEventListener('load', async () => {
     await animarTexto(document.querySelector('.hero__titulo--uno'));
