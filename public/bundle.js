@@ -179,6 +179,24 @@ slider.addEventListener('mousedown', presiona);
 slider.addEventListener('mousemove', mueve);
 slider.addEventListener('mouseup', suelta);
 
+const botonesEmail = document.querySelectorAll('[data-action="abrir-ventana-correo"]');
+const ventanaCorreo = document.getElementById('ventana-correo');
+const botonesCerrar = document.querySelectorAll('[data-action="cerrar-ventana"]');
+
+botonesEmail.forEach((boton) => {
+    boton.addEventListener('click', (e) => {
+        e.preventDefault();
+        ventanaCorreo.classList.add('ventana--active');
+    });
+});
+
+botonesCerrar.forEach((boton) => {
+    boton.addEventListener('click', (e) => {
+        e.preventDefault();
+        ventanaCorreo.classList.remove('ventana--active');
+    });
+});
+
 window.addEventListener('load', async () => {
     await animarTexto(document.querySelector('.hero__titulo--uno'));
     await animarTexto(document.querySelector('.hero__titulo--dos'));
