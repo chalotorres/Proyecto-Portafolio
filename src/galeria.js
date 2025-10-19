@@ -78,4 +78,4 @@ ventanaTrabajos.querySelector('.ventana__overlay').addEventListener('click', (e)
     if(e.target.matches('.ventana__overlay')){
         ventanaTrabajos.classList.remove('ventana--active');
     }
-})
+});

@@ -22,7 +22,7 @@
 		grid-template-rows: 1fr;
 		grid-auto-flow: column;
 		gap: 20px;
-		overflow-x: auto;
+		overflow-x: hidden;
 		cursor: move;
 		cursor: -webkit-grab;
 		cursor: -moz-grab;
